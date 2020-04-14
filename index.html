@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="myFunction('like')">Like</button>
+<button onclick="myFunction('nhantien')">Nhantien</button><hr>
+
+<textarea id="like" rows="7" cols="60">
+var array = 
+for (let i = 0; i < array.length; i++) {
+    like(`${array[i]}`, `https://www.facebook.com/profile.php?id=${array[i]}`)
+}
+</textarea>
+<textarea id="nhantien" rows="4" cols="60">
+for (let i = 0; i < array.length; i++) {
+    nhantien(parseInt(array[i]))
+}
+</textarea>
+
+<script>
+function myFunction(id) {
+  var copyText = document.getElementById(id);
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
+
+</body>
+</html>
