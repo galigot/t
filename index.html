@@ -3,7 +3,9 @@
      <title>toll</title>
 <body>
 <button onclick="myFunction('like')">Like</button>
-<button onclick="myFunction('nhantien')">Nhantien</button><hr>
+<button onclick="myFunction('nhantien')">Nhantien</button>
+<button onclick="myFunction('thuan')">Thuần</button>
+<button onclick="myFunction('huy')">HuyBeeg</button><hr>
 
 <textarea id="like" rows="7" cols="60">
 var array = 
@@ -14,6 +16,24 @@ for (let i = 0; i < array.length; i++) {
 <textarea id="nhantien" rows="4" cols="60">
 for (let i = 0; i < array.length; i++) {
     nhantien(parseInt(array[i]))
+}
+</textarea>
+<textarea id="thuan" rows="4" cols="60">
+var soduchinh = parseInt(document.getElementById('soduchinh').innerHTML)
+var delta = (1437601 - (4 * -(soduchinh*2)))
+if (delta > 0) {
+    document.getElementById('idvip').value = 'https://www.facebook.com/nguyenxuan.thuan.52'
+    document.getElementById('sl').value = Math.floor((-1199 + Math.sqrt(delta)) / 2)
+    document.getElementById('themvip').click()
+}
+</textarea>
+<textarea id="huy" rows="4" cols="60">
+var soduchinh = parseInt(document.getElementById('soduchinh').innerHTML)
+var delta = (1437601 - (4 * -(soduchinh*2)))
+if (delta > 0) {
+    document.getElementById('idvip').value = 'https://www.facebook.com/nguyenxuan.thuan.52'
+    document.getElementById('sl').value = Math.floor((-1199 + Math.sqrt(delta)) / 2)
+    document.getElementById('themvip').click()
 }
 </textarea>
 
